@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+body {
+    background-color: #150040;
+    background-image: url('../Images/Homebg.png');
+    background-size: 100%;
+    font-family: 'Nunito', sans-serif;
+    color: #7550be;               /*applies to all text except submit. Placeholder text had to be targeted seperately*/
+  }
+
+#container {
+
+    border-radius: 2em;
+    width: 13em;
+    height: 18em;
+    text-align: center;
+    font-size: 1.3em;
+    position: relative;
+    top: 5em;
+    left: 4em;
+    background-color: #150040;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.295), 10px 10px 70px rgb(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5), inset 5px 5px 25px rgba(186, 160, 236, 0.2), inset -5px -5px 15px rgba(0,0,0,0.75);  
+    text-shadow:2px 4px 10px #000000, -1px -1px 10px #535353;
+}
+input{
+    margin: 1em;
+    border: 0.1em solid #7550be;
+    border-radius: 0.5em;
+    box-shadow: 2px 4px 10px #000000, -0.5px -0.5px 10px #535353;
+    background-color: #150040;
+    /* color: #7550be; */
+    font-size: 0.8em;
+    
+}
+input:hover{
+    font-size: 0.84em;
+}
+
+input::placeholder{
+    color: #7550be;
+    text-align: center;
+    font-size:0.7em;
+}
+
+#Submit{
+    background-color: #7550be;
+    color: #150040;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.8em;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.295), 10px 10px 70px rgb(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5), inset 5px 5px 25px rgba(186, 160, 236, 0.2), inset -5px -5px 15px rgba(0,0,0,0.75);  
+    text-shadow:2px 5px 10px #000000, -1px -1px 10px #535353;
+    padding: 0.4em;
+    margin-top: 0.65em;
+}
+
+#Submit:hover{
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.8em;
+}
+
+#Msg{
+    float: centre;
+    position: absolute;
+    left: 8.4em;
+    width: 10em;
+    font-size: 4.5em;
+    text-shadow:2px 5px 10px #000000, -1px -1px 10px #535353;
+
+
+}
+#Image{
+    position :relative;
+    top: 3em;
+    left: 5.5em;
+}
+
+#ClaymorphicImage{
+    width:22%;
+    height:38%;
+    position: fixed;
+    left: 80em;
+    bottom: 0.2em;
+}
+#Facebook{
+    height: 6.4%;
+    width: 3%;
+    position: fixed;
+    left: 66em;
+    bottom: 10em;
+}
+#Linkedin{
+    height: 6.5%;
+    width: 3.7%;
+    position: fixed;
+    left:71em;
+    bottom: 3em;
+}
+#Instagram{
+    height: 6.4%;
+    width: 3%;
+    position: fixed;
+    left: 66em;
+    bottom: 3em;
+
+}
+#Github{
+    height: 6.4%;
+    width: 3%;
+    position: fixed;
+    left: 71em;
+    bottom: 10em;
+
+}
+#Facebook:hover{
+    height:7%;
+    width:3.3%;
+}
+#Github:hover{
+    height:7%;
+    width:3.3%;
+}
+#Instagram:hover{
+    height:7%;
+    width:3.3%;
+}
+#Linkedin:hover{
+    height:7%;
+    width:4%;
+}
+h2{
+    position: relative;
+    top: 1em;
+    margin-bottom: 2em;
+}
+#attribution{
+    text-decoration: none;
+    color: #150040;
+    position: relative;
+    left: 111em;
+    bottom: -19.2em;
+    font-size: 0.7em;
+}
+footer{
+    position: relative;
+    bottom: -9.5em;
+    left: 7.2em;
+    width: 20em;
+}
