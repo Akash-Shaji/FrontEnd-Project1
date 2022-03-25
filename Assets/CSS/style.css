@@ -1,151 +1,197 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+/*Clearing up any unwanted margin or padding*/
+*{    
+    Margin: 0px;
+    padding: 0px;
+}
+
+/* Setting up the background image and a few global properties */
 body {
     background-color: #150040;
     background-image: url('../Images/Homebg.png');
-    background-size: 100%;
+    background-size:cover;
     font-family: 'Nunito', sans-serif;
-    color: #7550be;               /*applies to all text except submit. Placeholder text had to be targeted seperately*/
-  }
+    color: #7550be;                
+}
 
+/* The IEEE-SSIT logo */
+#SSIT{
+    position :absolute;
+    top: 4vh;
+    left: 8.2vw;
+    height: 23vh;;
+    width: 13vw;
+}
+
+/* The claymorphic form */
 #container {
 
     border-radius: 2em;
-    width: 13em;
-    height: 18em;
-    text-align: center;
-    font-size: 1.3em;
-    position: relative;
-    top: 5em;
-    left: 4em;
+    width: 19vw;
+    height: 52.5vh;
+    position: absolute;
+    top: 30vh;
+    left: 6vw;
     background-color: #150040;
-    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.295), 10px 10px 70px rgb(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5), inset 5px 5px 25px rgba(186, 160, 236, 0.2), inset -5px -5px 15px rgba(0,0,0,0.75);  
-    text-shadow:2px 4px 10px #000000, -1px -1px 10px #535353;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.295), 10px 10px 70px rgb(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5), inset 5px 5px 25px rgba(186, 160, 236, 0.2), inset -5px -5px 15px rgba(0,0,0,0.75);  /*Creating the clay like feel using shadows*/
+    text-shadow:2px 4px 10px #000000, -1px -1px 10px #535353; /*A simpler version of the shadow art*/ 
+    
+}
+/* Sign in */
+h2{
+    position: absolute;
+    top: 5vh;
+    left: 6.25vw;
+    font-size:2.1vw;
+}
+#Username{
+    position: absolute;
+    top: 15vh;
+    left: 6.6vw;
+    font-size:1.3vw;
 }
 input{
-    margin: 1em;
-    border: 0.1em solid #7550be;
+    border: 0.1vw solid #7550be;
     border-radius: 0.5em;
     box-shadow: 2px 4px 10px #000000, -0.5px -0.5px 10px #535353;
     background-color: #150040;
-    /* color: #7550be; */
-    font-size: 0.8em;
-    
+    color:#7550be;
+    font-size: 1.1vw;
+    width: 14vw;
+    text-align: center;
 }
-input:hover{
-    font-size: 0.84em;
+#Usernamebox{
+    position : absolute;
+    top: 21vh;
+    left: 2.5vw;
 }
-
+#Password{
+    position : absolute;
+    top: 28vh;
+    left: 6.6vw;
+    font-size: 1.3vw;
+}    
+#Passwordbox{
+    position : absolute;
+    top: 34vh;
+    left: 2.5vw; 
+}
 input::placeholder{
     color: #7550be;
     text-align: center;
-    font-size:0.7em;
+    font-size:1vw;
 }
 
 #Submit{
+    position: absolute;
+    top: 42vh;
+    left: 6.57vw;
     background-color: #7550be;
     color: #150040;
-    font-size: 1em;
+    font-size: 1.3vw;
     font-weight: bold;
+    width: 6vw;
     border: none;
     border-radius: 0.8em;
     box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.295), 10px 10px 70px rgb(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5), inset 5px 5px 25px rgba(186, 160, 236, 0.2), inset -5px -5px 15px rgba(0,0,0,0.75);  
-    text-shadow:2px 5px 10px #000000, -1px -1px 10px #535353;
-    padding: 0.4em;
-    margin-top: 0.65em;
+    text-shadow:2px 4px 10px #000000, -1px -1px 10px #535353;
+    padding: 0.4vw;
 }
 
+/* The button feels like it is being pressed in real life */
 #Submit:hover{
-    font-size: 1.1em;
+    font-size: 1.25vw;
     font-weight: bold;
-    border: none;
-    border-radius: 0.8em;
 }
 
+/*Call to action*/
 #Msg{
-    float: centre;
     position: absolute;
-    left: 8.4em;
+    left: 36vw;
+    top: 18vh;
     width: 10em;
-    font-size: 4.5em;
+    font-size: 5.7vw;
     text-shadow:2px 5px 10px #000000, -1px -1px 10px #535353;
-
-
 }
-#Image{
-    position :relative;
-    top: 3em;
-    left: 5.5em;
-}
-
+/* 3d girl */
 #ClaymorphicImage{
-    width:22%;
-    height:38%;
-    position: fixed;
-    left: 80em;
-    bottom: 0.2em;
+    width:28vw;
+    height:42vh;
+    position: absolute;
+    right: 0vw;
+    bottom: 0.4vh;
 }
-#Facebook{
-    height: 6.4%;
-    width: 3%;
-    position: fixed;
-    left: 66em;
-    bottom: 10em;
-}
-#Linkedin{
-    height: 6.5%;
-    width: 3.7%;
-    position: fixed;
-    left:71em;
-    bottom: 3em;
-}
-#Instagram{
-    height: 6.4%;
-    width: 3%;
-    position: fixed;
-    left: 66em;
-    bottom: 3em;
-
-}
-#Github{
-    height: 6.4%;
-    width: 3%;
-    position: fixed;
-    left: 71em;
-    bottom: 10em;
-
-}
-#Facebook:hover{
-    height:7%;
-    width:3.3%;
-}
-#Github:hover{
-    height:7%;
-    width:3.3%;
-}
-#Instagram:hover{
-    height:7%;
-    width:3.3%;
-}
-#Linkedin:hover{
-    height:7%;
-    width:4%;
-}
-h2{
-    position: relative;
-    top: 1em;
-    margin-bottom: 2em;
-}
+/*Attribution for the 3d girl*/
 #attribution{
     text-decoration: none;
     color: #150040;
-    position: relative;
-    left: 111em;
-    bottom: -19.2em;
-    font-size: 0.7em;
+    position: absolute;
+    right:13vw;
+    bottom: 0vh;
+    font-size: 0.7vw;
 }
+
+/*Social media handles*/
+#Facebook{
+    height: 6.9vh;
+    width: 3.5vw;
+    position: absolute;
+    right: 1vw;
+    bottom: 37.7vh;
+}
+#Linkedin{
+    height: 7.7vh;
+    width: 4.1vw;
+    position: absolute;
+    right: 0.8vw;
+    bottom: 21.5vh;
+}
+#Instagram{
+    height: 7vh;
+    width: 3.5vw;
+    position: absolute;
+    right: 1.1vw;
+    bottom: 6.9vh;
+
+}
+#Github{
+    height: 7vh;
+    width: 3.5vw;
+    position: absolute;
+    right: 1vw;
+    bottom: 53vh;
+
+}
+#Facebook:hover{
+    height:6.8vh;
+    width:3.3vw;
+}
+#Github:hover{
+    height:6.8vh;
+    width:3.3vw;
+}
+#Instagram:hover{
+    height:6.8vh;
+    width:3.4vw;
+}
+#Linkedin:hover{
+    height:7.5vh;
+    width:3.9vw;
+}
+/*IEEE-SSIT software domain footer. I am not sure if the gradient fits the rest of the theme*/
 footer{
-    position: relative;
-    bottom: -9.5em;
-    left: 7.2em;
-    width: 20em;
+    position: absolute;
+    bottom: 8vh;
+    left: 8.2vw;
+    font-size:1.2vw;
 }
+
+/*Things to improve:
+
+-Code is too long
+-Add media queries to make the site look ok on phone, right now it scales only upto tablets
+
+*/
+
+/* If there are any doubts about the clay design ask me*/
